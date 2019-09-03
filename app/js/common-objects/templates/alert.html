@@ -1,6 +1,6 @@
 <div class="Alert alert alert-{{model.type}} fade in" data-dismiss="alert">
-    <a class="Alert-closeBtn close" data-dismiss="alert">&times;</a>
-    <h4 class="Alert-title alert-heading">{{model.title}}</h4>
+    <a class="Alert-closeBtn close" data-dismiss="alert" aria-label="{{i18n.CLOSE}}">&times;</a>
+    <h4 class="Alert-title alert-heading"> {{model.type}} {{model.title}}</h4>
 
     <p class="Alert-message">{{model.message}}</p>
 </div>

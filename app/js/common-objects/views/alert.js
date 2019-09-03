@@ -16,7 +16,9 @@ define([
                     type : this.options.type,
                     title : this.options.title,
                     message: this.options.message
-                }
+
+                },
+                i18n: App.config.i18n
             }));
             return this;
         },

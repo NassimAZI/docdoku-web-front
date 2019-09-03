@@ -36,8 +36,7 @@
 
     {{^tags.length}}
     <div class="Alert alert alert-info fade in" data-dismiss="alert">
-        <a class="Alert-closeBtn close" data-dismiss="alert">×</a>
-        <h4 class="Alert-title alert-heading"></h4>
+        <a class="Alert-closeBtn close"  data-dismiss="alert" aria-label="{{i18n.CLOSE}}">×</a>
         <p class="Alert-message">{{i18n.NO_TAGS_YET}}</p>
     </div>
     {{/tags.length}}
@@ -98,7 +97,7 @@
             <table id="workspace_user_table" class="table table-striped table-condensed">
                 <thead>
                 <tr>
-                    <th></th>
+                    <td></td>
                     <th>{{i18n.LOGIN}}</th>
                     <th>{{i18n.NAME}}</th>
                     <th>{{i18n.EMAIL}}</th>
@@ -109,7 +108,7 @@
                 {{#usersToManage}}
 
                 <tr>
-                    <td><input type="checkbox" class="toggle-checkbox" data-is-admin="{{isCurrentAdmin}}" data-login="{{login}}"/></td>
+                    <td><input type="checkbox" class="toggle-checkbox" data-is-admin="{{isCurrentAdmin}}" title="{{login}}" data-login="{{login}}"/></td>
                     <td>{{#isCurrentAdmin}}<i class="fa fa-graduation-cap"></i> {{/isCurrentAdmin}}{{login}}</td>
                     <td>{{name}}</td>
                     <td>{{email}}</td>
